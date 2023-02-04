@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,120 +18,182 @@
 
 <body>
     <!-- шапка сайта -->
-    <header>
+    <header class="style-heder">
         <!-- Mein navigation -->
-        <nav>
-            <a href="./index.html" class="logo link">
-                <span class="logo-color">Web</span>Studio</a>
+        <div class="container style-heder-container">
+            <nav class="page-nav">
+                <a href="./index.html" class="logo link">
+                    <span class="logo-color">Web</span>Studio</a>
 
-            <!-- Links to other pages or sections of the current page -->
-            <ul class="menu list">
-                <li class="link menu-item">
-                    <a class="link menu-link" href="./index.html">Studio</a>
-                </li>
-                <li class="link menu-item">
-                    <a class="link menu-link" href="./portfolio.html">Portfolio</a>
-                </li>
-                <li class="link menu-item">
-                    <a class="link menu-link" href="">Contacts</a>
-                </li>
-            </ul>
-        </nav>
-        <address>
-            <ul class="list">
-                <li>
-                    <a class="contacts-email link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-                </li>
-                <li>
-                    <a class="contact-phone-number link" href="tel:+110001111111">+11 (000) 111-11-11</a>
-                </li>
-            </ul>
-        </address>
+                <!-- Links to other pages or sections of the current page -->
+                <ul class="menu list">
+                    <li class="menu-item">
+                        <a class="link menu-link" href="./index.html">Studio</a>
+                    </li>
+                    <li class="menu-item">
+                        <a class="link menu-link" href="./portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="menu-item">
+                        <a class="link menu-link" href="">Contacts</a>
+                    </li>
+                </ul>
+            </nav>
+            <address class="contact-main">
+                <ul class="list contact-list">
+                    <li>
+                        <a class="contacts-email link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    </li>
+                    <li>
+                        <a class="contact-phone-number link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+                    </li>
+                </ul>
+            </address>
+        </div>
     </header>
 
     <!-- Unique page content -->
     <main>
         <!-- Filtr BTN -->
-        <section>
+        <section class="container">
             <h1 hidden>work examples</h1>
 
-            <ul class="list">
-                <li><button class="button secondary" type="button">All</button></li>
-                <li>
+            <ul class="list button-p">
+                <li class="filtr-p"><button class="button secondary" type="button">All</button></li>
+                <li class="filtr-p">
                     <button class="button secondary" type="button">Web Site</button>
                 </li>
 
-                <li><button class="button secondary" type="button">App</button></li>
+                <li class="filtr-p"><button class="button secondary" type="button">App</button></li>
 
-                <li>
+                <li class="filtr-p">
                     <button class="button secondary" type="button">Design</button>
                 </li>
 
-                <li>
+                <li class="filtr-p">
                     <button class="button secondary" type="button">Marketing</button>
                 </li>
             </ul>
 
             <!-- services offered -->
 
-            <ul class="list">
-                <li>
-                    <img src="./images/bank-app.jpg " alt="bank-app" width="360" height="300" />
-                    <h3 class="title">Banking App Interface Concept</h3>
-                    <p class="advanteges-text">App</p>
+            <ul class="list offer">
+                <li class="offer-service">
+                    <article class="card-p">
+                        <div class="card-p-thumb">
+                            <img src="./images/bank-app.jpg " alt="bank-app" width="360" height="300" />
+                        </div>
+                        <div class="card-p-content">
+                            <h2 class="title">Banking App Interface Concept</h2>
+                            <p class="advanteges-text">App</p>
+                        </div>
+                    </article>
                 </li>
-                <li>
-                    <img src="./images/qr-skan.jpg" alt="qr-skan" width="360" />
-                    <h3 class="title">Cashless Payment</h3>
-                    <p class="advanteges-text">Marketing</p>
+                <li class="offer-service">
+                    <article class="card-p">
+                        <div class="card-p-thumb">
+                            <img src="./images/qr-skan.jpg" alt="qr-skan" width="360" />
+                        </div>
+                        <div class="card-p-content">
+                            <h2 class="title">Cashless Payment</h2>
+                            <p class="advanteges-text">Marketing</p>
+                        </div>
+                    </article>
                 </li>
-                <li>
-                    <img src="./images/normalcy.jpg" alt="normalcy" width="360" />
-                    <h3 class="title">Meditaion App</h3>
-                    <p class="advanteges-text">App</p>
+                <li class="offer-service">
+                    <article class="card-p">
+                        <div class="card-p-thumb">
+                            <img src="./images/normalcy.jpg" alt="normalcy" width="360" />
+                        </div>
+                        <div class="card-p-content">
+                            <h2 class="title">Meditaion App</h2>
+                            <p class="advanteges-text">App</p>
+                        </div>
+                    </article>
                 </li>
 
-                <li>
-                    <img src="./images/auto-nav.jpg" alt="auto-nav" width="360" />
-                    <h3 class="title">Taxi Service</h3>
-                    <p class="advanteges-text">Marketing</p>
+                <li class="offer-service">
+                    <article class="card-p">
+                        <div class="card-p-thumb">
+                            <img src="./images/auto-nav.jpg" alt="auto-nav" width="360" />
+                        </div>
+                        <div class="card-p-content">
+                            <h2 class="title">Taxi Service</h2>
+                            <p class="advanteges-text">Marketing</p>
+                        </div>
+                    </article>
                 </li>
-                <li>
-                    <img src="./images/mobile-themes.jpg " alt="mobile-themes" width="360" />
-                    <h3 class="title">Screen Illustrations</h3>
-                    <p class="advanteges-text">Design</p>
+                <li class="offer-service">
+                    <article class="card-p">
+                        <div class="card-p-thumb">
+                            <img src="./images/mobile-themes.jpg " alt="mobile-themes" width="360" />
+                        </div>
+                        <div class="card-p-content">
+                            <h2 class="title">Screen Illustrations</h2>
+                            <p class="advanteges-text">Design</p>
+                        </div>
+                    </article>
                 </li>
-                <li>
-                    <img src="./images/girl-orange-sweater.jpg " alt="girl-orange-sweater" width="360" />
-                    <h3 class="title">Online Courses</h3>
-                    <p class="advanteges-text">Marketing</p>
+
+                <li class="offer-service">
+                    <article class="card-p">
+                        <div class="card-p-thumb">
+                            <img src="./images/girl-orange-sweater.jpg " alt="girl-orange-sweater" width="360" />
+                        </div>
+                        <div class="card-p-content">
+                            <h2 class="title">Online Courses</h2>
+                            <p class="advanteges-text">Marketing</p>
+                        </div>
+                    </article>
                 </li>
-                <li>
-                    <img src="./images/actions.jpg " alt="actions" width="360" />
-                    <h3 class="title">Instagram Stories Concept</h3>
-                    <p class="advanteges-text">Design</p>
+
+                <li class="offer-service">
+                    <article class="card-p">
+                        <div class="card-p-thumb">
+                            <img src="./images/actions.jpg " alt="actions" width="360" />
+                        </div>
+                        <div class="card-p-content">
+                            <h2 class="title">Instagram Stories Concept</h2>
+                            <p class="advanteges-text">Design</p>
+                        </div>
+                    </article>
                 </li>
-                <li>
-                    <img src="./images/bag-vegetables.jpg " alt="bag-vegetables" width="360" />
-                    <h3 class="title">Organic Food</h3>
-                    <p class="advanteges-text">Web Site</p>
+
+                <li class="offer-service">
+                    <article class="card-p">
+                        <div class="card-p-thumb">
+                            <img src="./images/bag-vegetables.jpg " alt="bag-vegetables" width="360" />
+                        </div>
+                        <div class="card-p-content">
+                            <h2 class="title">Organic Food</h2>
+                            <p class="advanteges-text">Web Site</p>
+                        </div>
+                    </article>
                 </li>
-                <li>
-                    <img src="./images/coffee-latte.jpg" alt="Fresh Coffee" width="360" />
-                    <h3 class="title">Fresh Coffee</h3>
-                    <p class="advanteges-text">Web Site</p>
+
+                <li class="offer-service">
+                    <article class="card-p">
+                        <div class="card-p-thumb">
+                            <img src="./images/coffee-latte.jpg" alt="Fresh Coffee" width="360" />
+                        </div>
+                        <div class="card-p-content">
+                            <h2 class="title">Fresh Coffee</h2>
+                            <p class="advanteges-text">Web Site</p>
+                        </div>
+                    </article>
                 </li>
             </ul>
         </section>
     </main>
     <!-- Footer -->
     <footer class="main-footer">
-        <a href="./index.html" class="logo-footer link">
-            <span class="logo-color">Web</span>Studio</a>
-        <p class="footer-text">
-            Increase the flow of customers and sales for your business with digital
-            marketing & growth solutions.
-        </p>
+        <div class="container footer-div">
+            <a class="logo footer-logo link" href="./index.html">
+                <span class="logo-color">Web</span>Studio</a>
+            <p class="footer-text description-footer">
+                Increase the flow of customers and sales for your business with digital
+                marketing & growth solutions.
+            </p>
+        </div>
     </footer>
 </body>
 
