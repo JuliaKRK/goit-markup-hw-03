@@ -9,7 +9,8 @@
 h1,
 h2,
 h3,
-h4 p {
+h4,
+p {
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -19,6 +20,7 @@ ol {
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
+  padding-bottom: 0;
 }
 
 img {
@@ -36,6 +38,7 @@ body {
 address {
   font-style: normal;
 }
+
 button {
   cursor: pointer;
 }
@@ -70,7 +73,6 @@ button {
 .button.primary {
   background-color: var(--accent-color);
   color: var(--primary-white-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   padding-top: 16px;
   padding-left: 32px;
   padding-bottom: 16px;
@@ -161,6 +163,7 @@ button {
   line-height: 1.5;
   letter-spacing: 0.02em;
   margin-right: 40px;
+  color: var(--primary-text-color);
 }
 .contacts-email:hover,
 .contacts-email:focus {
@@ -170,6 +173,7 @@ button {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  color: var(--primary-text-color);
 }
 .contact-phone-number:hover,
 .contact-phone-number:focus {
@@ -181,7 +185,8 @@ button {
 .hero {
   background-color: #2e2f42;
   color: #ffffff;
-  height: 600px;
+  padding-top: 188px;
+  padding-bottom: 188px;
 }
 
 .modal-btn:hover,
@@ -199,7 +204,7 @@ button {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 48px;
-  padding-top: 188px;
+  width: 496px;
 }
 
 .hero-content {
@@ -214,8 +219,6 @@ button {
 }
 
 .advanteges-list {
-  padding: 0;
-  margin: 0;
   list-style: none;
   display: flex;
   /* flex-wrap: wrap; */
@@ -239,7 +242,6 @@ button {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  margin: 0;
 }
 
 /* Section What Are We Doing */
@@ -249,8 +251,6 @@ button {
 }
 
 .doing-list {
-  padding: 0;
-  margin: 0;
   list-style: none;
   display: flex;
   /* flex-wrap: wrap; */
@@ -275,8 +275,6 @@ button {
 /* Section Our Team */
 
 .team-list {
-  padding: 0;
-  margin: 0;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
@@ -299,8 +297,6 @@ button {
 
 .team-sect {
   background: #f4f4fd;
-  padding-left: 156px;
-  padding-right: 156px;
   padding-top: 120px;
   padding-bottom: 120px;
 }
@@ -308,8 +304,6 @@ button {
 /* Footer */
 .main-footer {
   background: #2e2f42;
-}
-.footer-div {
   padding-top: 100px;
   padding-bottom: 100px;
 }
@@ -337,16 +331,12 @@ button {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  /* align-self: center;
-  align-items: center;
-  text-align: center; */
-  /* margin-left: auto;
-  margin-right: auto; */
+  margin-bottom: 72px;
   column-gap: 24px;
 }
-.filtr-p {
-  margin-bottom: 72px;
-  margin-top: 96px;
+.port-sec {
+  padding-top: 96px;
+  padding-bottom: 120px;
 }
 
 .offer {
@@ -354,24 +344,23 @@ button {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
+  column-gap: 24px;
+  row-gap: 48px;
 }
 
 .offer-service {
   flex-basis: calc((100% - 48px) / 3);
 }
 
-/* Card-p */
 .card-p {
   background: #ffffff;
-  border: 1px solid #e7e9fc;
 }
-.title {
-}
+
 .card-p-content {
   padding-top: 32px;
   padding-bottom: 32px;
   padding-left: 16px;
   padding-right: 16px;
   justify-content: center;
+  border: 1px solid #e7e9fc;
 }
